@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1752173291581.2988,
+    "workerId": 1,
+    "contractorId": 1,
+    "date": "2025-07-10",
+    "status": "present",
+    "workshopId": null,
+    "dailyWage": 223,
+    "workDay": 1,
+    "overtimeHours": 0,
+    "overtimeRate": 27.88,
+    "advance": 0,
+    "smokingCosts": 0,
+    "netDaily": 223,
+    "saved": true,
+    "timestamp": "2025-07-10T18:48:11.581Z"
+  }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختيار المقاول - نظام إدارة العمال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contractor-selection-page">
+    <header class="main-header">
+        <div class="header-content">
+            <h1><i class="fas fa-hard-hat"></i> نظام إدارة العمال والورش</h1>
+            <div class="user-info">
+                <span id="currentUserName">مرحباً، المدير</span>
+                <button class="btn logout-btn" onclick="logout()">
+                    <i class="fas fa-sign-out-alt"></i> تسجيل الخروج
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="contractor-selection-main">
+        <div class="page-title">
+            <h2><i class="fas fa-users"></i> اختر المقاول للعمل معه</h2>
+            <p>اختر المقاول من القائمة أدناه أو أضف مقاول جديد</p>
+        </div>
+
+        <div class="contractors-grid" id="contractorsGrid">
+            <!-- سيتم ملؤها بالمقاولين من JavaScript -->
+        </div>
+
+        <!-- نموذج إضافة مقاول جديد -->
+        <div id="addContractorModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3><i class="fas fa-user-plus"></i> إضافة مقاول جديد</h3>
+                    <span class="close" onclick="closeAddContractorModal()">&times;</span>
+                </div>
+                <form id="addContractorForm">
+                    <div class="form-group">
+                        <label for="contractorName">
+                            <i class="fas fa-user"></i> اسم المقاول
+                        </label>
+                        <input type="text" id="contractorName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contractorPhone">
+                            <i class="fas fa-phone"></i> رقم الهاتف
+                        </label>
+                        <input type="tel" id="contractorPhone">
+                    </div>
+                    <div class="form-group">
+                        <label for="contractorAddress">
+                            <i class="fas fa-map-marker-alt"></i> العنوان
+                        </label>
+                        <input type="text" id="contractorAddress">
+                    </div>
+                    <div class="form-group">
+                        <label for="contractorNotes">
+                            <i class="fas fa-sticky-note"></i> ملاحظات
+                        </label>
+                        <textarea id="contractorNotes" rows="3"></textarea>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="submit" class="btn success">
+                            <i class="fas fa-save"></i> حفظ المقاول
+                        </button>
+                        <button type="button" class="btn" onclick="closeAddContractorModal()">
+                            <i class="fas fa-times"></i> إلغاء
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/contractor-selection.js"></script>
+</body>
+</html>

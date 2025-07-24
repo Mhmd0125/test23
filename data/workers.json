@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "contractorId": 1,
+    "contractorName": "للابيلا",
+    "name": "سيسيب",
+    "workshopId": null,
+    "number": "",
+    "dailyWage": 223,
+    "overtimeRate": 27.88,
+    "phone": "",
+    "notes": "",
+    "active": true,
+    "isNew": false,
+    "createdAt": "2025-07-10T18:48:04.583Z"
+  }
+]
